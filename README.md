@@ -23,3 +23,13 @@ So far, all entries are done in SciKit Learn. Plan to do TensorFlow later.
 ### Credits
 1. [https://www.kaggle.com/c/poker-rule-induction](https://www.kaggle.com/c/poker-rule-induction)
 2. [http://archive.ics.uci.edu/ml/datasets/Poker+Hand](http://archive.ics.uci.edu/ml/datasets/Poker+Hand)
+
+# Installation Error
+1. `no lapack/blas resources found` @ scipy
+  - `sudo apt-get install libblas-dev liblapack-dev libatlas-base-dev gfortran`
+
+2. `Not found: freetype, png` @ matplotlib
+  - png: `sudo apt-get install libpng-dev`
+  - freetype: [https://launchpad.net/ubuntu/+source/freetype](https://launchpad.net/ubuntu/+source/freetype)
+  - still not found after install freetype: `sudo apt-get install pkg-config # probably pkg issue`
+
